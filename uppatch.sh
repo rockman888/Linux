@@ -1,9 +1,9 @@
 
 echo " "
-echo "------ Support uppatch for all linux ------"
-echo "  + AUTHOR		: ViLH (zidane)   "
-echo "  + LAST MODIFIED	: 2014-10-30 "
-echo "------ ----------------------------- ------"
+echo -e "\e[1;32m--------- Support uppatch for all linux ---------- \e[0m"
+echo -e "\e[1;32m  + AUTHOR		: ViLH (huuvi168@gmail.com) \e[0m"
+echo -e "\e[1;32m  + LAST MODIFIED	: 2014-11-26 \e[0m"
+echo -e "\e[1;32m--------- ----------------------------- ---------- \e[0m"
 
 if [ $# -ne 1 ] 
 then
@@ -48,8 +48,10 @@ fi
 
 if [ $flag -eq 0 ]
 then
-	echo "DirPath not found -> Please Check ..."		
+	echo -e "\e[0;31m DirPath not found -> Please Check ... \e[0m"
 else
-	echo "All Linux had updated patch Completed~"	
+	now=$(date)
+	echo -e "\e[1;33m All Linux had updated patch Completed~ \e[0m"	#1;33m yellow
+	echo -e "\e[1;33m $now \e[0m"
 fi
 echo " "
